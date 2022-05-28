@@ -9,8 +9,8 @@
             <h3>{{ contact.name }}</h3>
               <img [src]="contact.imageUrl" alt="{{ contact.name }}">
             <span class="pull-right">
-                <a href="#"><button class="btn btn-primary m-1 detail">Edit</button></a>
-                <a href="#"><button class="btn btn-danger m-1 detail">Delete</button></a>
+                <a routerLink="edit"><button class="btn btn-primary m-1 detail">Edit</button></a>
+                <a (click)="onDelete()"><button class="btn btn-danger m-1 detail">Delete</button></a>
             </span>
           </div>
         </div>
